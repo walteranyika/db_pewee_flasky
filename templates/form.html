@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Details</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+
+    <ul class="nav nav-pills">
+        <li class="active"><a href="/">Add Car</a></li>
+        <li><a href="/display">Display Details</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form action="" method="post">
+
+                <div class="form-group">
+                    <input type="text" name="make" required class="form-control" placeholder="Make">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="model" required class="form-control" placeholder="Model">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="color" required class="form-control" placeholder="Color">
+                </div>
+
+                <div class="form-group">
+                    <input type="number" name="price" required class="form-control" placeholder="Price">
+                </div>
+
+                <button class="btn btn-primary btn-block" type="submit">Save Car</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

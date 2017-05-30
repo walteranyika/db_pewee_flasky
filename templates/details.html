@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Details</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+
+    <ul class="nav nav-pills">
+        <li><a href="/">Add Car</a></li>
+        <li  class="active"><a href="/display">Display Details</a></li>
+    </ul>
+
+    <div class="row">
+       <table class="table">
+           <tr>
+               <th>ID</th>
+               <th>MAKE</th>
+               <th>MODEL</th>
+               <th>COLOR</th>
+               <th>PRICE</th>
+           </tr>
+
+           {% for gari in cars %}
+               <tr>
+                   <td>{{ gari.id }}</td>
+                   <td>{{ gari.make }}</td>
+                   <td>{{ gari.model }}</td>
+                   <td>{{ gari.color }}</td>
+                   <td>{{ gari.price }}</td>
+               </tr>
+           {% endfor %}
+
+
+       </table>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
